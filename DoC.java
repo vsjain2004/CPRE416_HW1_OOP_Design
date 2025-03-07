@@ -38,7 +38,7 @@ public class DoC extends Weapon {
 
     @Override
     public int damage() {
-        return new Random().nextInt(1, 9);
+        return new Random().nextInt(1, 7);
     }
 
     @Override
