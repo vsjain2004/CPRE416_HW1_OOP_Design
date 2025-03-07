@@ -1,1 +1,7 @@
 # CPRE416_HW1_OOP_Design
+
+This codebase is based on an in-development RPG system. Characters have multiple attributes, equipment and have different classes. This causes the creation of an abstract class Character, that implements common functionality and variables required by any character class. One type of Character class is Bard. Thus we have the Bard class which extends Character. Since attributes are divided into core and supplementary, and sometimes need to be stored in the same HashMap, we get the Attribute interface, which is implemented by the enum Core (for core attributes).
+
+Each character has equipments and there exist different types of equipment. One such type is a weapon. Each equipment type also has subtypes for ease of player understanding. Thus we get an interface Equipment, which is implemented by equipment type classes such as the abstract class Weapon. Due to the subtypes of equipment types being different, we have an interface EqType, which is implemented by subtypes such as the enum WepType.
+
+Finally, we have defined two different weapons that can be used by characters. Both the ArcaneStaff and DoC (short for Dagger of Crescendo) classes extend the abstract class Weapon, implemented any unimplemented/abstract functions from the Equipment interface and Weapon class.
