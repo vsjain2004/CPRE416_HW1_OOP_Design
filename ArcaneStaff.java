@@ -5,7 +5,7 @@ import java.util.Random;
 
 public class ArcaneStaff extends Weapon {
  
-    /**
+    /*
      * This function is an exmaple of polymorphism because it is overriding it from the 
      * Equipment.
      */
@@ -14,7 +14,7 @@ public class ArcaneStaff extends Weapon {
         return WepType.Staff_Magic;
     }
 
-    /**
+    /*
      * This function is an exmaple of polymorphism because it is overriding it from the 
      * Equipment.
      */
@@ -41,13 +41,15 @@ public class ArcaneStaff extends Weapon {
     public String getSpecialAbilities() {
         return null;
     }
-    /**
+
+    /*
      * This function is an example of polymorphism.
      */
     @Override
     public int damage() {
         return new Random().nextInt(1, 9);
     }
+    
     @Override
     public String getName() {
       return "Arcane Staff";

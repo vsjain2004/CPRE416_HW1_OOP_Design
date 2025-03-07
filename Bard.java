@@ -11,11 +11,13 @@ public class Bard extends Character {
         weapons.add(new DoC());
     }
 
+    
     @Override
     protected void applyClassBonus() {
         coreAttributes.replace(Core.VIT, coreAttributes.get(Core.VIT) - 1);
     }
-    /**
+
+    /*
      * Example of Stamp coupling.
      * The coupling exists because:
      * The entire Weapon object is passed to the method as a parameter
