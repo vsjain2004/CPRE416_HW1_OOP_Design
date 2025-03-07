@@ -104,6 +104,11 @@ public abstract class Character {
 
     protected abstract int attack(Weapon Weapon);
 
+    /*
+     * This is an example of data coupling.
+     * Simple Parameter Type: It accepts only a primitive int parameter (the damage amount), 
+     * which is the minimal, exact data needed to perform its function.
+      */
     public void damage(int damage) {
         int vit = inFight.get(Core.VIT);
         vit = Math.max(vit - damage, 0);
