@@ -40,5 +40,10 @@ public class DoC extends Weapon {
     public int damage() {
         return new Random().nextInt(1, 9);
     }
+
+    @Override
+    public String getName() {
+        return "Dagger of Crescendo";
+    }
     
 }

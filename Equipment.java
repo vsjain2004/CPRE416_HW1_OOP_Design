@@ -9,4 +9,5 @@ public interface Equipment {
     public Map<Attribute, Integer> getBonuses();
     public String getEffects();
     public String getSpecialAbilities();
+    public String getName();
 }
